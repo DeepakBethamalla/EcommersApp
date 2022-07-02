@@ -1,0 +1,112 @@
+ 
+
+ <section>
+    <div id="sect1"class="container">   
+        <div class="header">
+                <br> <br>  <br> 
+                <span class="text"> TEN&nbsp;Certified&nbsp;Expert </span> 
+                <!-- <h1> Dear Intern,</h1>  -->
+                <br> <br>  <br> 
+                <h3>Dear Intern, </h3>
+                <br> <br>  <br> 
+ 
+            <p> We at TEN not only strive to provide the best guidance to our interns but also
+                ensure their experience with us proves to be a career milestone.</p>
+                    
+                    
+             <p> We hereby offer to certify you as an Expert in your domain for a paltry sum of
+             INR 200/- (RUPEES TWO HUNDRED ONLY). This Internship encompasses all the major 
+            learnings you gave and received and establishes you as a certified professional.</p>
+                    
+             <p> We are certain this accomplishment will go a long way in building your fledgling
+            career and prove instrumental in making you the best in business.</p>
+                    
+                    
+            <p>  The QR code below helps you to make the required payment.
+            The certificate would be shared on your email Id registered with us, once the payment is successful.
+             Also, fill up the form below that helps you subscribe for the required certificate. </p>
+                    
+             <p> We look forward to certifying you and thereby enhancing your skill set and enriching your ever-growing profile. </p> 
+          </div>    
+          
+          <div class="subscribe_info">
+              <h1>Subscribe here to get Certificates </h1>
+                 
+                <form class="content" [formGroup]="certification" (ngSubmit)="submitData()">
+                    <div class="row">
+                     
+                        <div class=" mt-2 mb-2 col-lg-3 col-5">
+                           
+                           <input  type="text" class="form-control" formControlName="firstName"  placeholder="First Name">
+                           
+                           <div *ngIf="firstname.invalid && (firstname.touched || firstname.dirty)">
+                                <span class="error" *ngIf="firstname.errors?.required"> firstName is required</span>
+                                <span  class="error"  *ngIf="firstname.errors?.pattern"> Enter only Characters</span>
+                          </div>
+                    
+                        </div>
+
+                        <div class=" mt-2 mb-2 col-lg-3 col-5">
+                          <input class="form-control"   type="text" formControlName="lastName"  placeholder="Last Name"> 
+                          
+                           <div *ngIf="lastname.invalid && (firstname.touched || firstname.dirty)">
+                            <span class="error" *ngIf="lastname.errors?.required"> LastName is required</span>
+                            <span class="error" *ngIf="lastname.errors?.pattern"> Enter only Characters</span>
+                          </div> 
+                          
+                        </div>
+                   </div>
+
+                   <div class="row" >
+                        <div class=" mt-2 mb-2 col-lg-3 col-5">
+                           <input  type="text" formControlName="emailId" class="form-control" placeholder="Email Id">
+                         
+                           <div *ngIf="emailid.invalid && (emailid.touched || emailid.dirty)">
+                            <span class="error" *ngIf="emailid.errors?.required"> Email Id is required</span>
+                            <span class="error" *ngIf="emailid.errors?.email"> Enter valid Email Id</span>
+                          </div>
+                         
+                        </div>
+
+                        <div class="mt-2 mb-2 col-lg-3 col-5">
+                           <input type="text" formControlName="mobileNumber" class="form-control" placeholder="Mobile Number">
+                           
+                           <div *ngIf="mobilenumber.invalid && (mobilenumber.touched || mobilenumber.dirty)">
+                            <span class="error" *ngIf="mobilenumber.errors?.required"> Mobile Number is required</span>
+                            <span class="error" *ngIf="mobilenumber.errors?.pattern"> Enter only Numbers</span>
+                          </div>
+                       
+                        </div>
+                  </div>
+                   
+                 
+                  <div class="row" >
+                    <div class=" mt-2 mb-2 col-lg-3 col-5">
+                        <input  type="text" formControlName="paymentId" class="form-control" placeholder="Payment Transition Id">
+                      
+                        <div *ngIf="paymentid.invalid && (paymentid.touched || paymentid.dirty)">
+                         <span class="error" *ngIf="paymentid.errors?.required"> Payment Id is required</span>
+                         <span class="error" *ngIf="paymentid.errors?.minLength"> Enter valid Payment Id</span>
+                       </div>
+                      
+                     </div>
+
+                        <div class=" mt-3 col-lg-6 col-6" class="click">
+                             <button  class="btn" [disabled]="certification.invalid">submit</button>
+                        </div>
+                   </div>
+                  
+                </form>
+
+            </div>
+           
+           <div class="payment_scanner">
+                   <img src="assets/images/TEN_PAY_1.jpg">
+            </div>
+
+        </div>
+           
+        
+
+</section>
+

@@ -1,0 +1,127 @@
+*{
+    margin:0px;
+    padding: 1px;
+    
+}
+.nav_header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: -200;
+    
+} 
+
+p{
+  font-family: querstrial,sans-serif;
+  padding-top:20px ;
+    font-style: italic;
+     font-size: 43px; 
+    font-weight: bold;
+}
+ span{
+    color: rgb(206, 16, 16);
+    text-indent: 1px;
+    font-family: querstrial,sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;   
+} 
+
+.nav_text{
+    margin: -5px 50px 0px 0px;
+    text-shadow: 0px 0px -5px 0px  solid black;
+    
+}
+.nav_items{
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 30px;
+    row-gap: 30px;
+    color: black;
+    font-size: medium;
+   }
+.nav_material{
+    margin: 20px;
+}
+button{
+    border: 2px solid black;
+}
+.cart_box{
+    width: 100px;
+    height: 45px;
+    padding-bottom: 40px;
+    align-items: center;
+    border: 1px;
+    border-radius: 30px;
+    background-color: rgb(206, 16, 16);
+}
+
+.cart_box:hover{
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: rgb(41, 41, 90);
+    transition: 0.2s;
+}
+.cart_img{
+    color: black;
+   margin: 8px;
+}
+.cart_img:hover{
+    color: white;
+}
+.login_box{
+    height: 30%;
+    
+   
+}
+input{
+    color: white;
+    padding: 3px 3px 3px 3px;
+    outline: none;
+}
+.search{
+    display: flex;
+   float: right;
+}
+.search_icon{
+    color: #fff;
+    align-items: center;
+    display: flex;
+    margin: 10px 8px 5px -35px;
+    
+}
+.search_bar{
+    width: 400px;
+    height: 45px;
+    background-color: black;
+    border-radius: 20px;
+    border: none;
+   
+   
+}
+.search_bar:hover{
+    width: 400px;
+    height: 45px;
+    background-color: wheat;
+    border-radius: 20px;
+} 
+
+ .nav_footer{
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    display: flexbox;
+    display: flex;
+   
+    justify-content: space-around;
+} 
+ .logo {
+ 
+ width: 80px;
+ height: 80px;
+ margin: -30px 120px;
+ align-items: center;
+
+}

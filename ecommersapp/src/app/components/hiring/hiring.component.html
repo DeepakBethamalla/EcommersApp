@@ -1,0 +1,128 @@
+
+<!-- <div class="container">
+    
+<div class="hiring" >
+    <img padding-left=" 5%" width="80%" height="750vh"   src="https://static.wixstatic.com/media/11062b_557462ab123440368447ab18a66043e5~mv2.jpg/v1/fill/w_980,h_745,al_c,q_85,usm_0.66_1.00_0.01/11062b_557462ab123440368447ab18a66043e5~mv2.webp">
+   
+    <div class="scanner">
+      <img width="300px" src="https://static.wixstatic.com/media/693073_4c899eb662c84031926c133cf5f32b95~mv2.jpg/v1/fill/w_358,h_478,al_c,q_80,usm_0.66_1.00_0.01/TEN_PAY_1.webp" alt="">
+      </div>
+      <div class="application"> 
+      <img "   src="https://static.wixstatic.com/media/0c2d11194b8042ca9f11f7f681339102.jpg/v1/fill/w_1129,h_671,al_c,q_85,usm_0.66_1.00_0.01/0c2d11194b8042ca9f11f7f681339102.webp">
+     </div>
+</div>
+</div> -->
+<section>
+
+  <div id="sec1" class="container">
+    
+       
+  <div class="color-overlay">
+        <h1> We Are Hiring Interns </h1>  
+    <div>     
+       <p>The Student Intern program is a structured and guided work-based learning program for
+          students currently enrolled in India.</p>  <br>
+       
+        
+       
+       <p>There is a small registration fee, INR 100 /- (RUPEES ONE HUNDRED ONLY) 
+       applicable to all incoming interns  as part of this One-of-a-Kind Point based Program. 
+       This is required not just to ensure a seamless on-boarding and exit process but also to
+        supply the interns with relevant study material and make them aware of how a corporate
+         setup works.</p> <br>
+       
+       <p>Scan the QR code to complete your payment and submit the below
+       application form to start with your registration process.</p> <br>
+       
+       <p> Please keep the payment transaction ID handy for submitting
+       the form.</p> <br>
+       
+       <p>Note: This internship does not offer an opportunity to earn money,
+       rather helps an individual grow by working on the job and
+       earn a certificate upon successful completion.</p> <br>
+       
+       <p>Check out few of our open internship positions below
+       Refer the application form for more open positions</p> <br>
+       
+       
+       <p> Digital Marketing Interns</p> <br>
+       
+        <p> General Management Interns</p> <br>
+       
+       <p>Technical/Software Experts</p> <br>
+       
+        <p> Product Management Interns</p> <br>
+       
+       <p> Content Interns and more...</p> <br>
+        
+      </div> 
+
+</div>
+     <div class="payment_scanner">
+        <img style="width: 300px; position: absolute;  " src="assets/images/TEN_PAY_1.jpg">
+      </div> 
+</div>
+
+<div id="sec2" class="container">
+  <div class="form_header">
+    <span> Application Form</span>
+    <p>Regestration Fee Rs 100/- </p>
+  </div>
+
+  <mat-card style="height: 300px">
+    <mat-card-content>
+      <div class="header">
+        <P>Sign Into Your Account </P>
+      </div>
+      <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+        <div class="emailInput">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input
+              formControlName="email"
+              matInput
+              placeholder="Enter email address" required
+            />
+            <mat-error *ngIf="!loginForm.controls['email'].valid">
+                Email is required
+              </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <span>
+            <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Forgot Password?</a>
+          </span>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input formControlName="password" matInput [type]=" hide ? 'password' : 'text'" required />
+            <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>
+                {{hide ? 'visibility_off' : 'visibility'}}
+            </mat-icon>
+        </button>
+        <mat-error *ngIf="!loginForm.controls['password'].valid">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+        </div>
+        <button mat-flat-button color="primary">Login</button>
+      </form>
+
+      <div class="button-row">
+        <span>
+          <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Create Account!</a>
+        </span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+
+</div>
+
+</section>
+
+
+
+

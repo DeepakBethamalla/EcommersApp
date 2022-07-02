@@ -1,0 +1,56 @@
+<app-header> </app-header>
+<div class="container">
+  <div class="row" >
+     <div class="menu_bar">
+          <ul>  
+                <li> <a routerLink= "" > Home </a>  </li>
+                <li> <a routerLink= "course" > course</a>   </li>
+                <li> <a routerLink= "hiring"> Hiring </a> </li> 
+                <li> <a routerLink= "techinical" > Techinical </a>  </li>
+                <li> 
+                  <!-- <a routerLink= "shopping-cart" > shopping-cart </a>  -->
+                  
+                  <button mat-button [matMenuTriggerFor]="menu" class="dropdown"  padding-right:20px> <span>More </span></button>
+                  <mat-menu #menu="matMenu" class="dropdown_menu" style="padding-right: 20px;" >
+                   <div style="padding-right: 20px;">
+                    <span style="justify-content: center; vertical-align: baseline; text-align: center; text-decoration: none; list-style-type: none; padding-right:10% ;">
+                    <li > <a routerLink= "certification" > Certifaction </a></li>
+                    
+                    <li > <a routerLink= "membership"> Membership </a> </li> 
+
+                    <li > <a routerLink= "forum"> Forum</a> </li> 
+
+                    <li > <a routerLink= "#"> Alumin Team </a> </li> 
+                   
+                    <li > <a routerLink= "hackathon" >Hackathon </a></li>
+                    
+                     <li > <a routerLink= "#"> Campus Ambassador  </a> </li> 
+
+                    <li > <a routerLink= "#"> Testimonials </a> </li> 
+
+                    <li > <a routerLink= "#"> Contact Us  </a> </li> 
+
+                    <li > <a routerLink= "#"> Complaints</a> </li> 
+                    <!-- <button mat-menu-item>Item 1</button>
+                    <button mat-menu-item>Item 2</button> -->
+                  </span> 
+                  </div>
+                  </mat-menu> 
+               
+                </li>
+               
+          </ul> 
+        
+     </div>
+  </div>
+</div>
+
+
+ <router-outlet> </router-outlet>
+
+
+  <div class="row">
+    <div class="col">
+      <app-footer></app-footer>
+    </div>
+  </div>

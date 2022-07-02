@@ -1,0 +1,167 @@
+/* 
+.hiring{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    opacity: 0.7;
+     z-index: -1;
+     margin-top: 50px;
+     margin-bottom: 50px;
+}
+.scanner{
+    
+    margin-top: -449px;
+    margin-right: -600px;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    transform: translate(-50,-50);
+}
+.application{
+    margin-top: 48px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    opacity: 0.2;
+     z-index: 1;
+} */
+#sec1 {  
+    height:  700px;  
+    color: #fff;
+    background: #000 url("/assets/images/hiring1.jpg");  
+    background-repeat: no-repeat;
+    width: 1200px;
+    padding: 15px;
+    margin-top: 50px;
+    position: relative;
+    opacity: .8;
+ 
+}
+.color-overlay{
+    height: 700px;
+    margin-left: -12px;
+    margin-top: -16px;
+    background: #000;
+    opacity: .7;
+    position: absolute;
+    
+}
+.payment_scanner{
+  position: absolute;
+  bottom: 430px;
+  right: 320px;
+  font-size: 18px;
+  margin: 20px;
+  opacity: 1;
+  z-index: 1;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   
+}
+p{ 
+    margin-left: 40px;
+    margin-top: 2px ;
+    margin-bottom:2px ;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Arial, Helvetica;
+   color:#fff;
+   text-align: start;  
+ 
+   margin-right: 100px;
+   
+ }
+
+ #sec2 {  
+     
+    background-image:url("https://static.wixstatic.com/media/0c2d11194b8042ca9f11f7f681339102.jpg/v1/fill/w_1129,h_671,al_c,q_85,usm_0.66_1.00_0.01/0c2d11194b8042ca9f11f7f681339102.webp");  
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    position: relative;
+    height: 900px;
+    width: 80%;
+    
+}
+.form_header span{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 50px;
+    letter-spacing: 0;
+   
+}
+.form_header p{
+    font-family: sans-serif;
+    color: #000;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    letter-spacing: 0;
+   
+}
+
+mat-card {
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 600px;
+  }
+  
+  .header{
+    text-align: center;
+  
+  }
+  .full-width {
+    width: 80%;
+  }
+  
+  .button-row {
+    padding-top: 5px;
+  }
+  
+  .button-row a {
+    margin-right: 8px;
+    text-align: center;
+  }
+  
+  .forget-password{
+    padding-left: 0px;
+  }
+  
+  .emailInput{
+    padding-top: 10px;
+  }
+  
+  .contentBody {
+    padding: 60px 1rem;
+    background :#1b6ca8;
+    display: block;
+  }
+  
+  .aLink{
+    float: right;
+    padding-right: 60px;
+    text-decoration: none;
+  }
+  .button-row .aLink{
+    float: left;
+    padding-right: 60px;
+    text-decoration: none;
+    
+  }
+  
+
